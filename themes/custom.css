@@ -1,0 +1,30 @@
+/* themes/custom.css */
+/* Marp custom theme */
+@charset "UTF-8";
+@import "https://unpkg.com/@marp-team/marp-core@latest/marp.css";
+
+/* Name your theme and use it in front matter: theme: product-docs */
+@theme product-docs;
+
+/* Base */
+section {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.35;
+}
+
+/* Title slide variant via class */
+section.lead h1 {
+  font-size: 2.8em;
+}
+
+/* Header/Footer (shown with Marp directives) */
+section::after {
+  /* footer rendered via directive, but ensure spacing looks good */
+  margin-top: 0.5rem;
+}
+
+/* Accent helpers */
+strong { letter-spacing: 0.2px; }
+
+/* Example color tweak */
+h1, h2, h3 { font-weight: 700; }
