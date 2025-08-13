@@ -1,70 +1,73 @@
 ---
 marp: true
-title: Product Docs — Overview
-author: 24f2005647@ds.study.iitm.ac.in
-theme: product-docs
+title: Product Documentation with Marp
+author: Niranjan S G
+theme: custom
 paginate: true
-math: katex
-footer: '© 2025 — Product Docs | 24f2005647@ds.study.iitm.ac.in'
 ---
 
-<!-- _class: lead -->
-<!-- _backgroundColor: #0e141b -->
-<!-- _color: #ffffff -->
-# Product Documentation (Marp)
+<!-- Slide 1 -->
+# Product Documentation
 
-**Author:** 24f2005647@ds.study.iitm.ac.in  
-**Goal:** Maintainable docs in version control, exportable to HTML/PDF/PPTX.
+**By:** Niranjan S G  
+📧 **Email:** 24f2005647@ds.study.iitm.ac.in  
 
----
-
-## Why Marp for Product Docs?
-
-- Markdown-first workflow
-- Version-control friendly (Git)
-- One source → many formats (HTML/PDF/PPTX)
-- Custom themes via CSS
-- Page numbers enabled ✅
+This presentation is built using **Marp** with:
+- A custom theme  
+- Page numbers  
+- Background images  
+- Mathematical equations  
 
 ---
 
-<!-- Background image slide -->
-![bg cover](images/hero.jpg)
+<!-- _backgroundImage: url('images/bg.jpg') -->
+<!-- _backgroundSize: cover -->
 
-# Architecture at a Glance
+# Background Image Slide
 
-*Use a branded or relevant product image as background (images/hero.jpg).*
-
----
-
-<!-- _header: **Setup** -->
-## Getting Started
-
-1. Install Marp CLI (`npm i -D @marp-team/marp-cli`)
-2. Write docs in `slides.md`
-3. Export:
-   - `marp slides.md -o dist/slides.html`
-   - `marp slides.md --pdf --allow-local-files`
-   - `marp slides.md --pptx`
-
-> Tip: `marp -s .` for live preview.
+This slide has a **full background image** applied.  
+Image path: `images/bg.jpg`  
 
 ---
 
-## Styling with Marp Directives
+## Custom Styling Example
 
-- `<!-- _class: lead -->` — larger, centered title slide
-- `<!-- _backgroundColor: #123456 -->` — custom background
-- `<!-- _color: red -->` — text color
-- `footer:` & `header:` — per-slide or global
-- **Theme:** `theme: product-docs` (our custom theme in `themes/custom.css`)
+This slide demonstrates text styled via `themes/custom.css`.
+
+> “Great documentation is like great code — clean, structured, and easy to read.”
 
 ---
 
-## Code Snippet
+## Mathematical Equations
 
-```bash
-# Export to HTML/PDF/PPTX
-marp slides.md -o dist/slides.html
-marp slides.md --pdf --allow-local-files
-marp slides.md --pptx
+The **time complexity** of our main algorithm is:
+
+$$
+T(n) = O(n \log n)
+$$
+
+The most famous equation in physics:
+
+$E = mc^2$
+
+---
+
+## Why Marp?
+
+- Easy Markdown syntax  
+- Supports custom themes  
+- Exports to HTML, PDF, PPTX  
+- Great for documentation, teaching, and talks  
+
+---
+
+## Summary
+
+We covered:
+- 📧 Email in presentation  
+- 🎨 Custom theme applied  
+- 📄 Page numbers enabled  
+- 🖼️ Background image usage  
+- 🧮 LaTeX math support  
+
+---
