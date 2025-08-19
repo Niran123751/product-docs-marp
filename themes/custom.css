@@ -1,30 +1,35 @@
-/* themes/custom.css */
-/* Marp custom theme */
-@charset "UTF-8";
-@import "https://unpkg.com/@marp-team/marp-core@latest/marp.css";
 
-/* Name your theme and use it in front matter: theme: product-docs */
-@theme product-docs;
+/* @theme custom-theme */
 
-/* Base */
-section {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  line-height: 1.35;
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 24px;
+  color: #222;
+  background-color: #fff;
 }
 
-/* Title slide variant via class */
-section.lead h1 {
-  font-size: 2.8em;
+/* Title */
+h1 {
+  font-size: 2.4rem;
+  color: #0a2540;
 }
 
-/* Header/Footer (shown with Marp directives) */
+/* Header / footer */
+header { font-weight: 600; color: #0a2540; }
+footer { color: #444; }
+
+/* Pagination */
 section::after {
-  /* footer rendered via directive, but ensure spacing looks good */
-  margin-top: 0.5rem;
+  content: 'Page ' attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+  position: absolute;
+  right: 1.2rem;
+  bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: rgba(0,0,0,0.45);
 }
 
-/* Accent helpers */
-strong { letter-spacing: 0.2px; }
+/* Code block */
+pre code {
+  font-size: 0.82rem;
+}
 
-/* Example color tweak */
-h1, h2, h3 { font-weight: 700; }
