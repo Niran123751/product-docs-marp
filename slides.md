@@ -1,73 +1,43 @@
 ---
 marp: true
-title: Product Documentation with Marp
-author: Niranjan S G
-theme: custom
+theme: custom-theme
+size: 16:9
 paginate: true
+style: |
+  section::after {
+    content: 'Page ' attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+    position: absolute;
+    right: 1rem;
+    bottom: 0.6rem;
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.6);
+  }
+header: 'Product Docs — Technical'
+footer: 'Contact: 24f2005647@ds.study.iitm.ac.in'
 ---
 
-<!-- Slide 1 -->
-# Product Documentation
-
-**By:** Niranjan S G  
-📧 **Email:** 24f2005647@ds.study.iitm.ac.in  
-
-This presentation is built using **Marp** with:
-- A custom theme  
-- Page numbers  
-- Background images  
-- Mathematical equations  
-
----
-
-<!-- _backgroundImage: url('images/bg.jpg') -->
-<!-- _backgroundSize: cover -->
-
-# Background Image Slide
-
-This slide has a **full background image** applied.  
-Image path: `images/bg.jpg`  
+# Product X — Documentation Overview  
+Contact: 24f2005647@ds.study.iitm.ac.in
 
 ---
 
-## Custom Styling Example
+![bg](assets/bg-architecture.jpg)
 
-This slide demonstrates text styled via `themes/custom.css`.
-
-> “Great documentation is like great code — clean, structured, and easy to read.”
-
----
-
-## Mathematical Equations
-
-The **time complexity** of our main algorithm is:
-
-$$
-T(n) = O(n \log n)
-$$
-
-The most famous equation in physics:
-
-$E = mc^2$
+# Architecture Overview  
+High level diagram and key components.
 
 ---
 
-## Why Marp?
-
-- Easy Markdown syntax  
-- Supports custom themes  
-- Exports to HTML, PDF, PPTX  
-- Great for documentation, teaching, and talks  
+# Key Features
+- **High perf** data pipeline <!-- .element: class="fragment" -->
+- **Secure** by design <!-- .element: class="fragment" -->
+- **Extensible** plugin system <!-- .element: class="fragment" -->
 
 ---
 
-## Summary
+# Example: Config parsing (Python)
 
-We covered:
-- 📧 Email in presentation  
-- 🎨 Custom theme applied  
-- 📄 Page numbers enabled  
-- 🖼️ Background image usage  
-- 🧮 LaTeX math support  
+```python
+def parse_config(cfg):
+    return {k.lower(): v for k, v in cfg.items()}
 
----
