@@ -33,7 +33,7 @@ System design and components at a glance.
 # Key Features
 
 - **High performance** data pipeline <!-- .element: class="fragment" -->
-- **Secure by design** with full audits <!-- .element: class="fragment" -->
+- **Secure by design** with audits <!-- .element: class="fragment" -->
 - **Extensible** plugin system <!-- .element: class="fragment" -->
 
 ---
@@ -44,5 +44,3 @@ System design and components at a glance.
 def parse_config(cfg):
     """Normalize config keys to lowercase"""
     return {k.lower(): v for k, v in cfg.items()}
-
-
