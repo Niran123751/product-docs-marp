@@ -1,46 +1,57 @@
 ---
 marp: true
-theme: custom-theme
-size: 16:9
+title: Product Documentation with Marp
+author: Niranjan S G
+theme: custom
 paginate: true
-header: "Product Docs — Technical"
-footer: "Contact: 24f2005647@ds.study.iitm.ac.in"
-style: |
-  section::after {
-    content: 'Page ' attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
-    position: absolute;
-    right: 1rem;
-    bottom: 0.6rem;
-    font-size: 0.9rem;
-    color: rgba(0,0,0,0.6);
-  }
 ---
 
-# Product X — Documentation Overview
+<!-- Slide 1 -->
+# Product Documentation
 
-📧 Contact: 24f2005647@ds.study.iitm.ac.in
+**By:** Niranjan S G  
+📧 24f2005647@ds.study.iitm.ac.in  
 
 ---
 
-![bg](assets/bg-architecture.jpg)
+<!-- Slide 2 (Background Image Example) -->
+![bg](images/background.jpg)
 
-# Architecture Overview
+# Introduction
 
-System design and components at a glance.
-
----
-
-# Key Features
-
-- **High performance** data pipeline <!-- .element: class="fragment" -->
-- **Secure by design** with audits <!-- .element: class="fragment" -->
-- **Extensible** plugin system <!-- .element: class="fragment" -->
+This presentation demonstrates how product documentation can be maintained in version control and exported into different formats using **Marp**.
 
 ---
 
-# Example: Config Parsing (Python)
+<!-- Slide 3 (Custom Styling Example) -->
+<!-- _class: lead -->
+# Custom Styling
 
-```python
-def parse_config(cfg):
-    """Normalize config keys to lowercase"""
-    return {k.lower(): v for k, v in cfg.items()}
+This slide uses a **custom theme (theme.css)** with larger text and styled headers.
+
+---
+
+<!-- Slide 4 (Math Example) -->
+# Algorithmic Complexity
+
+The time complexity of binary search is:
+
+$$
+T(n) = O(\log n)
+$$
+
+The time complexity of merge sort is:
+
+$$
+T(n) = O(n \log n)
+$$
+
+---
+
+<!-- Slide 5 -->
+# Benefits of Marp
+
+- Maintainable in version control (GitHub/GitLab)
+- Easy export to PDF, PPTX, HTML
+- Supports **theming, math, and images**
+- Ideal for **technical documentation**
